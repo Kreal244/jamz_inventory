@@ -1,0 +1,16 @@
+{
+    "spreadsheet": [
+        {
+            "value": "locations",
+            "type": "Locations"
+        },
+        {
+            "value": "inventory",
+            "type": "Inventory"
+        },
+        {
+            "value": "products",
+            "type": "Products"
+        }
+    ]
+}

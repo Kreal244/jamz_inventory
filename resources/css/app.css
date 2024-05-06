@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TEMPLATE THEME EXAMPLE */
+/* :root.default{
+//main theme 
+--main-color:#ffffff;
+--sub-color:#ffffff;
+--loading-color:#ffffff;
+//text color
+--text-color:#ffffff;
+--text-hover-color:#ffffff;
+--text-active-color:#ffffff;
+--text-button-light:#ffffff;
+--text-button-dark:#ffffff;
+--text-color:#ffffff;
+//button color
+--primary-button:#ffffff;
+--success-button:#ffffff;
+--default-button:#ffffff;
+--danger-button:#ffffff;
+--notifcation-button:#ffffff;
+--link-button:#ffffff;
+//backgound color
+--background-color:#ffffff;
+--success-background-color:#ffffff;
+--notification-background-color:#ffffff;
+--default-background-color:#ffffff;
+--danger-background-color:#ffffff;
+--info-background-color:#ffffff;
+} */
+:root,
+:root.default {
+    /* main theme  */
+    --main-color: #b0a695;
+    --sub-color: #ebe3d5;
+    --loading-color: #776b5d;
+    --background-color: #f3eeea;
+    --background-sub-color: #ffffff;
+    --cover-color: #bbb09daa;
+    /* text color */
+    --text-color: #776b5d;
+    --text-hover-color: #a99c91;
+    --text-active-color: #a99c91;
+    --text-button-light: #ffffff;
+    --text-button-dark: var(--text-color);
+    --text-danger: #db706e;
+    --text-success: #2fbb78;
+    /* button color */
+    --primary-button: #ccc1ad;
+    --success-button: #2fbb78;
+    --default-button: #b0a695;
+    --danger-button: #db706e;
+    --notifcation-button: #eddb9c;
+    --info-button: #2facc3;
+    --link-button: #4c9fcf;
+    --hover-button: #fdf7e4;
+    /* backgound color */
+    --success-background-color: #2fbb78;
+    --notification-background-color: #eddb9c;
+    --default-background-color: #b0a695;
+    --danger-background-color: #db706e;
+    --info-background-color: #2facc3;
+
+    /* button active color */
+    --primary-button-hover: #e6e6e6;
+    --success-button-hover: #5cc98f;
+    --default-button-hover: #b3acba;
+    --danger-button-hover: #e6b3b1;
+    --notifcation-button-hover: #ece6db;
+    --info-button-hover: #b3e3d3;
+    --link-button-hover: #adb9d8;
+}
+body {
+    background: var(--background-color);
+}
+.btn-md {
+    padding: 6px 12px;
+}
+.btn-sm {
+    padding: 3px 8px;
+    font-size: 12px;
+}
+.btn-lg {
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.btn-sidebar {
+    width: 100%;
+    text-transform: capitalize;
+}
+.btn-feature {
+    text-transform: capitalize;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-button);
+    padding: 5px 0px;
+}
+.btn-feature span {
+    padding: 0px 12px;
+}
+
+.divider {
+    border-bottom: 1px solid var(--main-color);
+    margin: 13px 0px 5px 0px;
+}
+.divider_nav {
+    border-bottom: 1px solid #b8a79388;
+    margin: 10px 0px;
+    width: 80%;
+}
+hr {
+    padding: 13px 0px 10px 0px;
+}
+/* Button:hover{
+background-color: var(--hover-button);
+border: 0;
+
+} */
+.cover {
+    background-color: var(--cover-color);
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    padding: 4px 6px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin: 0px 3px;
+    font-size: 13px;
+}
+input:focus {
+    border: none;
+    border-bottom: 1px solid var(--default-button-hover);
+}
+
+#sidebar .active {
+    color: var(--info-button);
+}
+button:disabled {
+    cursor: not-allowed;
+}
+button.bg-default,
+button.bg-danger,
+button.bg-info,
+button.bg-notification {
+    color: var(--text-button-light);
+}
+button.bg-link {
+    background-color: transparent;
+    color: var(--link-button);
+    border: 1.2px solid var(--link-button);
+}
+button:hover {
+    color: var(--hover-button);
+}
+#sidebar button:hover,
+a:not(#logo):hover {
+    color: var(--text-hover-color);
+}
+button.bg-primary:hover {
+    background-color: var(--primary-button-hover);
+}
+button.bg-success:hover {
+    background-color: var(--success-button-hover);
+}
+button.bg-default:hover {
+    background-color: var(--default-button-hover);
+}
+button.bg-danger:hover {
+    background-color: var(--danger-button-hover);
+}
+button.bg-notification:hover {
+    background-color: var(--notifcation-button-hover);
+}
+button.bg-link:hover {
+    border-color: var(--link-button-hover);
+    color: var(--link-button-hover);
+}
+button.text-link:hover {
+    color: var(--link-button-hover);
+}
+button.bg-info:hover {
+    background-color: var(--info-button-hover);
+}
+.table th,
+.table td {
+    border: 1px solid #8b8b8ba6;
+    padding: 5px 10px;
+}
+.table .tb-header {
+    background-color: var(--sub-color);
+}
+.form-item {
+    text-transform: capitalize;
+}
+.form-item > Label {
+    padding-left: 5px;
+}
+.form-item,
+.form-item-inline,
+.form-item-only-input {
+    margin: 5px 0px;
+    color: black;
+}
+.form-item-inline {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin: 5px 0px;
+}
+.form-item-inline > label {
+    width: 30%;
+    font-size: 13px;
+}
+.form-item-inline > .input-text {
+    border: 0px;
+    padding: 2px 6px;
+    font-size: 13px;
+}
+.form-item-only-input {
+    margin-top: 10px;
+}
+.form-item-only-input input {
+    font-size: 12px;
+    border: 0px;
+    text-overflow: ellipsis;
+}
+.item-input input {
+    border: 1px solid var(--cover-color);
+    border-radius: 10px;
+}
+/* EDIT CREDENTIAL FORM */
+
+p.p-info {
+    margin-left: 45px;
+    margin-bottom: 0;
+}
+
+p.p-header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#products:-webkit-scrollbar {
+    width: 2px;
+}

@@ -1,0 +1,66 @@
+{
+    "importTypes": [
+        "Transfer order",
+        "Adjust invetory"
+    ],
+    "exportTypes": [
+        {
+            "value": "product",
+            "description": "export product"
+        },
+        {
+            "value": "vendor",
+            "description": "export vendor"
+        },
+        {
+            "value": "add product",
+            "description": "export add product form"
+        },
+        {
+            "value": "adjust product",
+            "description": "export adjust product form"
+        }
+    ],
+    "productTypes": [
+        {
+            "name": "Stocked Products (most common)",
+            "value": "stocked_product",
+            "describe": ""
+        },
+        {
+            "name": "Serialized Products ",
+            "value": "serialized_product",
+            "describe": ""
+        },
+        {
+            "name": "Non-stocked Products",
+            "value": "non_stocked_product",
+            "describe": ""
+        },
+        {
+            "name": "Service",
+            "value": "service",
+            "describe": ""
+        }
+    ],
+    "locationTypes": [
+        {
+            "id": 1,
+            "location": "Stocked"
+        },
+        {
+            "id": 2,
+            "location": "Non-Stocked"
+        }
+    ],
+    "pricingSchemeTypes": [
+        {
+            "pricing": "normal price",
+            "currency": "USD"
+        },
+        {
+            "pricing": "usd",
+            "currency": "USD"
+        }
+    ]
+}
